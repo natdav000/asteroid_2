@@ -30,8 +30,8 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, ot
 function overlap () {
 	
 }
-function projectile () {
-    projectile2 = sprites.createProjectileFromSide(img`
+function projectile2 () {
+    projectile = sprites.createProjectileFromSide(img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . 4 4 4 4 . . . . . 
 . . . . 4 4 4 4 4 4 4 4 . . . . 
@@ -50,7 +50,7 @@ function projectile () {
 . . . . . . . . . . . . . . . . 
 `, 0, 0)
 }
-let projectile2: Sprite = null
+let projectile: Sprite = null
 let main: Sprite = null
 hero()
 scene.setBackgroundColor(11)
